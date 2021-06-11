@@ -10,6 +10,13 @@ GMTK/[Bb]uilds/
 GMTK/[Ll]ogs/
 GMTK/[Mm]emoryCaptures/
 
+
+GMTK/[Pp]ackages/
+
+EditorUserSettings.asset
+Search.settings
+
+
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/[Aa]ssets/**/*.meta
 
