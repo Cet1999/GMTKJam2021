@@ -1,22 +1,27 @@
 fileFormatVersion: 2
-guid: 579d765c7d1e0ba4b80a551e2dab4c77
+guid: 2adf22e279da5d34db46ed519b10b283
 ModelImporter:
   serializedVersion: 21100
   internalIDToNameTable:
   - first:
-      74: 6291707047543540627
-    second: Test
+      74: -8961382328484085379
+    second: LittleGuy_Jump
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Eyes
-    second: {fileID: 2100000, guid: 1a8a63f7b4716084c8ac474a786c9c29, type: 2}
+      name: EggHat
+    second: {fileID: 2100000, guid: 0318c04d36872db4ea3e86f10d57ea23, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: lambert1
-    second: {fileID: 2100000, guid: 62ff305a2bc652f45801d81ea22c0582, type: 2}
+      name: Eyes
+    second: {fileID: 2100000, guid: 9793c6a4cb37664468f174f6855ce634, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LittleBody
+    second: {fileID: 2100000, guid: d5bda160df1adaa49939c44e4878858b, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -43,36 +48,7 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations:
-    - serializedVersion: 16
-      name: Test
-      takeName: Test
-      internalID: 0
-      firstFrame: 1
-      lastFrame: 35
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 1
+    clipAnimations: []
     isReadable: 0
   meshes:
     lODScreenPercentages: []

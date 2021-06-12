@@ -1,22 +1,27 @@
 fileFormatVersion: 2
-guid: 579d765c7d1e0ba4b80a551e2dab4c77
+guid: 9e59e754315695941b081365567e7421
 ModelImporter:
   serializedVersion: 21100
   internalIDToNameTable:
   - first:
-      74: 6291707047543540627
-    second: Test
+      74: -1997294207166992026
+    second: LittleGuy_Idle
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Eyes
-    second: {fileID: 2100000, guid: 1a8a63f7b4716084c8ac474a786c9c29, type: 2}
+      name: EggHat
+    second: {fileID: 2100000, guid: 0318c04d36872db4ea3e86f10d57ea23, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: lambert1
-    second: {fileID: 2100000, guid: 62ff305a2bc652f45801d81ea22c0582, type: 2}
+      name: Eyes
+    second: {fileID: 2100000, guid: 9793c6a4cb37664468f174f6855ce634, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LittleBody
+    second: {fileID: 2100000, guid: d5bda160df1adaa49939c44e4878858b, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -45,11 +50,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Test
-      takeName: Test
+      name: LittleGuy_Idle
+      takeName: LittleGuy_Idle
       internalID: 0
-      firstFrame: 1
-      lastFrame: 35
+      firstFrame: 60
+      lastFrame: 79
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -72,7 +77,7 @@ ModelImporter:
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 1
+      additiveReferencePoseFrame: 60
     isReadable: 0
   meshes:
     lODScreenPercentages: []

@@ -4,12 +4,24 @@ ModelImporter:
   serializedVersion: 21100
   internalIDToNameTable:
   - first:
-      74: 2667949614841947897
-    second: Walk
-  - first:
       74: -2954034210326028069
     second: LittleGuy_Walk
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EggHat
+    second: {fileID: 2100000, guid: 0318c04d36872db4ea3e86f10d57ea23, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Eyes
+    second: {fileID: 2100000, guid: 9793c6a4cb37664468f174f6855ce634, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LittleBody
+    second: {fileID: 2100000, guid: d5bda160df1adaa49939c44e4878858b, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -120,7 +132,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.19999999
+    globalScale: 20
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
