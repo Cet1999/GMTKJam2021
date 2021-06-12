@@ -18,10 +18,13 @@ public class ChainHandle : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if(player == null || firstChain == null) { print(transform.name + " : is missing references"); return; }
+
         distance = Vector3.Distance(transform.position, firstChain.position * distanceOffset);
     }
     void OnDrawGizmos()
     {
+        if (player == null || firstChain == null) { print(transform.name + " : is missing references"); return; }
         Gizmos.color = Color.yellow;
         if (firstChain != null)
         {
@@ -31,6 +34,7 @@ public class ChainHandle : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (player == null || firstChain == null) { print(transform.name + " : is missing references"); return; }
         // towards "player"
         Vector3 dir = player.transform.position - firstChain.transform.position;
         // clamp length
