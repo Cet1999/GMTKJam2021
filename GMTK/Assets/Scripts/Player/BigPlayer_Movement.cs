@@ -62,6 +62,8 @@ public class BigPlayer_Movement : MonoBehaviour {
         // attempt to jump
         if (jumpPressed && isGrounded) {
             rb.AddForce(Vector3.up * jumpForce);
+
+            jumpPressed = false;
         }
     }
 
