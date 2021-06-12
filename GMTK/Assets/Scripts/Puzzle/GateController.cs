@@ -1,8 +1,8 @@
 using UnityEngine;
 
 public class GateController : MonoBehaviour {
-	[SerializeField] Vector3 openPosition;
-	[SerializeField] Vector3 closedPosition;
+	[SerializeField] Transform openPosition;
+	[SerializeField] Transform closedPosition;
 
 	[System.Serializable] struct SwitchStruct { public GameObject lever; public bool shouldBeOn; }
 	[SerializeField] SwitchStruct[] switches;
@@ -28,8 +28,8 @@ public class GateController : MonoBehaviour {
 			}
 
 			print("wyatt " + shouldOpen);
-
-			print("wyatt " + closedPosition);
+			print("wyatt " + openPosition.position);
+			print("wyatt " + closedPosition.position);
 
 			if (shouldOpen) {
 				OpenGate();
@@ -43,13 +43,13 @@ public class GateController : MonoBehaviour {
 		if (isOpen) return;
 		isOpen = true;
 
-		transform.position = openPosition;
+		transform.position = openPosition.position;
 	}
 
 	void CloseGate() {
 		if (!isOpen) return;
 		isOpen = false;
 
-		transform.position = closedPosition;
+		transform.position = closedPosition.position;
 	}
 }
