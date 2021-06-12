@@ -5,8 +5,10 @@ using UnityEngine;
 public class ChainHandle : MonoBehaviour
 {
     [SerializeField]
+    [Tooltip("If this script is on the small player: put the small player's transform in here...... If it's the handle, then put the child obj 'Player2_ChainLinkSpot' transform in here instead")]
     Transform player;
     [SerializeField]
+    [Tooltip("If this script is on the small plauer: put the chain 'Handle' transform in here..... If it's on the handle, then put the chain's first link 'G_ChainLink_Single' transform in here")]
     Transform firstChain;
     float distance;
 
