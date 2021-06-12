@@ -6,7 +6,22 @@ ModelImporter:
   - first:
       74: 5069290263584237963
     second: BigGuy_Flop
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BigBody
+    second: {fileID: 2100000, guid: 62ff305a2bc652f45801d81ea22c0582, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Claws
+    second: {fileID: 2100000, guid: f6cb279c80b772b4995aa0e7c07e326a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Eyes
+    second: {fileID: 2100000, guid: 1a8a63f7b4716084c8ac474a786c9c29, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
