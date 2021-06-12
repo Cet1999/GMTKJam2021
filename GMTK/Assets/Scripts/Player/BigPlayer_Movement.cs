@@ -28,6 +28,16 @@ public class BigPlayer_Movement : MonoBehaviour {
 
         // calculate force applied by input
         Vector3 moveDir = rawInputMovement.normalized;
+
+        //rotate player
+        //transform.LookAt(transform.position + moveDir);
+        if (moveDir != new Vector3(0, 0, 0))
+        {
+            Quaternion toRotation = Quaternion.LookRotation(moveDir);
+            transform.rotation = Quaternion.Lerp(transform.rotation, toRotation, 0.1f);
+        }
+        
+
         Vector3 force = moveDir * moveForce;
 
         if (!isGrounded) {
