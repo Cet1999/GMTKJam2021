@@ -1,14 +1,11 @@
 fileFormatVersion: 2
-guid: 52307cae4cecb4541a59c67b233b0c53
+guid: 579d765c7d1e0ba4b80a551e2dab4c77
 ModelImporter:
   serializedVersion: 21100
   internalIDToNameTable:
   - first:
-      74: 2667949614841947897
-    second: Walk
-  - first:
-      74: -2954034210326028069
-    second: LittleGuy_Walk
+      74: 6291707047543540627
+    second: Test
   externalObjects: {}
   materials:
     materialImportMode: 2
@@ -38,11 +35,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: LittleGuy_Walk
-      takeName: LittleGuy_Walk
+      name: Test
+      takeName: Test
       internalID: 0
       firstFrame: 1
-      lastFrame: 17
+      lastFrame: 35
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -120,7 +117,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.19999999
+    globalScale: 20
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
