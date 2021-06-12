@@ -16,7 +16,7 @@ public class Switch : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (SwitchBody.transform.localRotation.normalized.x > 0.45f)
+        if (SwitchBody.transform.localRotation.normalized.x > 0f)
         {
             On = true;
             Debug.Log("Switched On!");
