@@ -606,6 +606,4 @@ MonoBehaviour:
   Player2Reference: {fileID: 38873074}
   Smooth: 1
   Angle: 70
-  Height: 18
   SmoothTime: 0.3
-  velocity: {x: 0, y: 0, z: 0}
