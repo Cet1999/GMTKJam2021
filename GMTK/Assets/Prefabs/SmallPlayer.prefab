@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1454870523}
   - component: {fileID: 1454870522}
   - component: {fileID: 1454870521}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Player2_ChainLinkSpot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -105,7 +105,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1088787464207449864}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: GroundedCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -142,7 +142,7 @@ GameObject:
   - component: {fileID: 1088787464256248197}
   - component: {fileID: 1088787464256248194}
   - component: {fileID: 930773797}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmallPlayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -399,9 +399,77 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7924069067575831484, guid: 379ee47878385294ab74f108fdb10f5b, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -7914847541607681921, guid: 379ee47878385294ab74f108fdb10f5b, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -6857596735835469601, guid: 379ee47878385294ab74f108fdb10f5b, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -4846646513176604903, guid: 379ee47878385294ab74f108fdb10f5b, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -4435298499648655636, guid: 379ee47878385294ab74f108fdb10f5b, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -3495790026072504191, guid: 379ee47878385294ab74f108fdb10f5b, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -2005303311006734328, guid: 379ee47878385294ab74f108fdb10f5b, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5490406809834436, guid: 379ee47878385294ab74f108fdb10f5b, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 379ee47878385294ab74f108fdb10f5b, type: 3}
       propertyPath: m_Name
       value: LittleGuy_LP_Rig
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 379ee47878385294ab74f108fdb10f5b, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 958290617153175085, guid: 379ee47878385294ab74f108fdb10f5b, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1171769477669694964, guid: 379ee47878385294ab74f108fdb10f5b, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5800112966487277248, guid: 379ee47878385294ab74f108fdb10f5b, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5889354445706386654, guid: 379ee47878385294ab74f108fdb10f5b, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7448580457558751505, guid: 379ee47878385294ab74f108fdb10f5b, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7497520119604944009, guid: 379ee47878385294ab74f108fdb10f5b, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7860301208981577055, guid: 379ee47878385294ab74f108fdb10f5b, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8316310142670951859, guid: 379ee47878385294ab74f108fdb10f5b, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 379ee47878385294ab74f108fdb10f5b, type: 3}

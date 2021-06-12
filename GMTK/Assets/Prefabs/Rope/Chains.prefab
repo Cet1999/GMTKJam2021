@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6990022631885392557}
   - component: {fileID: 6990022631885392546}
   - component: {fileID: 6990022631885392556}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -127,7 +127,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -1.9377234, y: -0.4505269, z: -0.7527396}
+  m_ConnectedAnchor: {x: -1.9376624, y: -0.45049822, z: -0.75274825}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -237,7 +237,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6990022632871708064}
   - component: {fileID: 6990022632871708067}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chains
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -317,7 +317,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -23.425203, y: -0.010590385, z: -0.014319928}
+  m_ConnectedAnchor: {x: -23.425188, y: -0.010590385, z: -0.014323888}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -454,7 +454,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -25.800095, y: -0.000016716685, z: 0.00002628862}
+  m_ConnectedAnchor: {x: -25.800018, y: -0.000006267942, z: 0.000007764333}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -591,7 +591,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -24.000055, y: -0.0000036846486, z: -0.000008246934}
+  m_ConnectedAnchor: {x: -24.00001, y: -0.000008847328, z: 0.0000005690081}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -728,7 +728,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -25.000072, y: 0.000024864185, z: 0.000016861664}
+  m_ConnectedAnchor: {x: -24.999996, y: 0.0000021284268, z: 0.000008086868}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -865,7 +865,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -24.800137, y: -0.000015996533, z: -0.000004004145}
+  m_ConnectedAnchor: {x: -24.80006, y: 0.0000026454945, z: 0.000004896052}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -1002,7 +1002,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -26.900045, y: -0.000015023148, z: -0.000020325606}
+  m_ConnectedAnchor: {x: -26.900015, y: -0.0000084641115, z: -0.000000692776}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -1139,7 +1139,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -25.240793, y: 0.012954544, z: 0.007187832}
+  m_ConnectedAnchor: {x: -25.24077, y: 0.012961365, z: 0.0071784817}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -1276,7 +1276,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -23.40012, y: 0.000015049311, z: 0.000027574693}
+  m_ConnectedAnchor: {x: -23.400028, y: 0.000014560928, z: -0.0000017536568}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -1413,7 +1413,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -27.000084, y: 0.000033044897, z: 0.000008013731}
+  m_ConnectedAnchor: {x: -27.000008, y: -0.0000111866, z: -0.0000041322764}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -1579,7 +1579,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -24.098516, y: -0.016245514, z: 0.011064976}
+  m_ConnectedAnchor: {x: -24.098497, y: -0.016251624, z: 0.0110678375}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -1716,7 +1716,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -23.98107, y: -0.02974997, z: -0.023585517}
+  m_ConnectedAnchor: {x: -23.981047, y: -0.029740777, z: -0.02358237}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -1883,6 +1883,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: G_ChainLink_Single (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bb6f473bbcda7b44fbf48cc9516869f2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb6f473bbcda7b44fbf48cc9516869f2, type: 3}
 --- !u!1 &7908573135009623368 stripped
@@ -1966,6 +1970,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: G_ChainLink_Single (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bb6f473bbcda7b44fbf48cc9516869f2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb6f473bbcda7b44fbf48cc9516869f2, type: 3}
 --- !u!4 &7389058926781454565 stripped
@@ -2048,6 +2056,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: bb6f473bbcda7b44fbf48cc9516869f2, type: 3}
       propertyPath: m_Name
       value: G_ChainLink_Single (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bb6f473bbcda7b44fbf48cc9516869f2, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb6f473bbcda7b44fbf48cc9516869f2, type: 3}
@@ -2136,6 +2148,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: G_ChainLink_Single (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bb6f473bbcda7b44fbf48cc9516869f2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb6f473bbcda7b44fbf48cc9516869f2, type: 3}
 --- !u!1 &7908573134561900335 stripped
@@ -2214,6 +2230,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: G_ChainLink_Single (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bb6f473bbcda7b44fbf48cc9516869f2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb6f473bbcda7b44fbf48cc9516869f2, type: 3}
 --- !u!1 &7908573134591751846 stripped
@@ -2284,6 +2304,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: bb6f473bbcda7b44fbf48cc9516869f2, type: 3}
       propertyPath: m_Name
       value: G_ChainLink_Single
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bb6f473bbcda7b44fbf48cc9516869f2, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb6f473bbcda7b44fbf48cc9516869f2, type: 3}
@@ -2368,6 +2392,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: G_ChainLink_Single (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bb6f473bbcda7b44fbf48cc9516869f2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb6f473bbcda7b44fbf48cc9516869f2, type: 3}
 --- !u!1 &7908573133899438128 stripped
@@ -2450,6 +2478,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: bb6f473bbcda7b44fbf48cc9516869f2, type: 3}
       propertyPath: m_Name
       value: G_ChainLink_Single (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bb6f473bbcda7b44fbf48cc9516869f2, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb6f473bbcda7b44fbf48cc9516869f2, type: 3}
@@ -2534,6 +2566,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: G_ChainLink_Single (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bb6f473bbcda7b44fbf48cc9516869f2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb6f473bbcda7b44fbf48cc9516869f2, type: 3}
 --- !u!4 &7389058925745128078 stripped
@@ -2616,6 +2652,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: bb6f473bbcda7b44fbf48cc9516869f2, type: 3}
       propertyPath: m_Name
       value: G_ChainLink_Single (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bb6f473bbcda7b44fbf48cc9516869f2, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb6f473bbcda7b44fbf48cc9516869f2, type: 3}
@@ -2700,6 +2740,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: G_ChainLink_Single (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bb6f473bbcda7b44fbf48cc9516869f2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb6f473bbcda7b44fbf48cc9516869f2, type: 3}
 --- !u!1 &7908573133384687142 stripped
@@ -2782,6 +2826,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: bb6f473bbcda7b44fbf48cc9516869f2, type: 3}
       propertyPath: m_Name
       value: G_ChainLink_Single (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bb6f473bbcda7b44fbf48cc9516869f2, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb6f473bbcda7b44fbf48cc9516869f2, type: 3}

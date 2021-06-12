@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 882588260}
   - component: {fileID: 882588259}
   - component: {fileID: 882588258}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Player1_ChainLinkSpot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -111,7 +111,7 @@ GameObject:
   - component: {fileID: 7876884991763499683}
   - component: {fileID: 7876884991763499685}
   - component: {fileID: 7876884991763499684}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BigPlayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -309,7 +309,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7876884993349177612}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: GroundedCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
