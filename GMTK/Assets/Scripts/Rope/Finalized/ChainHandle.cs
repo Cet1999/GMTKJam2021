@@ -44,6 +44,10 @@ public class ChainHandle : MonoBehaviour
         // add clamped length
         transform.position = firstChain.transform.position + dir;
         // look towards movement
-        transform.rotation = Quaternion.LookRotation(-dir);
+        if (distanceOffset == 1.0f)
+        {
+            transform.rotation = Quaternion.LookRotation(-dir);
+        }
+        
     }
 }
