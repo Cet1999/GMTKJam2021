@@ -11,17 +11,16 @@ public class RopeFollowsPlayers : MonoBehaviour
     public Transform t_ropeRoot;
     public Transform t_ropeEnd;
 
-
     // Update is called once per frame
     void Update()
     {
         //if not null
-        if(t_ropeParent1 || t_ropeRoot != null)
+        if(t_ropeParent1 && t_ropeRoot != null)
         {
             t_ropeRoot.position = t_ropeParent1.position;
         }
 
-        if (t_ropeParent1 || t_ropeRoot != null)
+        if (t_ropeParent2 && t_ropeEnd != null)
         {
             t_ropeEnd.position = t_ropeParent2.position;
         }
