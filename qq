@@ -1,0 +1,77 @@
+warning: LF will be replaced by CRLF in GMTK/Assets/Prefabs/Switch.prefab.
+The file will have its original line endings in your working directory
+[1mdiff --git a/GMTK/Assets/Prefabs/Switch.prefab b/GMTK/Assets/Prefabs/Switch.prefab[m
+[1mindex 9987d72..9eb78d3 100644[m
+[1m--- a/GMTK/Assets/Prefabs/Switch.prefab[m
+[1m+++ b/GMTK/Assets/Prefabs/Switch.prefab[m
+[36m@@ -356,7 +356,7 @@[m [mHingeJoint:[m
+   m_Anchor: {x: 0, y: -0.78, z: 0}[m
+   m_Axis: {x: 1, y: 0, z: 0}[m
+   m_AutoConfigureConnectedAnchor: 1[m
+[31m-  m_ConnectedAnchor: {x: 0, y: 1.1780953, z: 0}[m
+[32m+[m[32m  m_ConnectedAnchor: {x: 0, y: 1.1780955, z: 0}[m
+   m_UseSpring: 0[m
+   m_Spring:[m
+     spring: 0[m
+[36m@@ -369,16 +369,16 @@[m [mHingeJoint:[m
+     freeSpin: 0[m
+   m_UseLimits: 1[m
+   m_Limits:[m
+[31m-    min: -70[m
+[31m-    max: 70[m
+[32m+[m[32m    min: -50[m
+[32m+[m[32m    max: 50[m
+     bounciness: 0[m
+[31m-    bounceMinVelocity: 0.2[m
+[32m+[m[32m    bounceMinVelocity: 0[m
+     contactDistance: 0[m
+   m_BreakForce: Infinity[m
+   m_BreakTorque: Infinity[m
+   m_EnableCollision: 0[m
+   m_EnablePreprocessing: 1[m
+[31m-  m_MassScale: 5[m
+[32m+[m[32m  m_MassScale: 50[m
+   m_ConnectedMassScale: 1[m
+ --- !u!136 &9151663290018060870[m
+ CapsuleCollider:[m
+[1mdiff --git a/GMTK/Assets/Scripts/Puzzle/GateController.cs b/GMTK/Assets/Scripts/Puzzle/GateController.cs[m
+[1mindex acd2cd4..2aec109 100644[m
+[1m--- a/GMTK/Assets/Scripts/Puzzle/GateController.cs[m
+[1m+++ b/GMTK/Assets/Scripts/Puzzle/GateController.cs[m
+[36m@@ -16,7 +16,6 @@[m [mpublic class GateController : MonoBehaviour {[m
+ 		checkTimer += Time.deltaTime;[m
+ [m
+ 		if (checkTimer > checkInterval) {[m
+[31m-			print("wyatt inner update");[m
+ 			checkTimer = 0f;[m
+ [m
+ 			bool shouldOpen = true;[m
+[36m@@ -27,10 +26,6 @@[m [mpublic class GateController : MonoBehaviour {[m
+ 				}[m
+ 			}[m
+ [m
+[31m-			print("wyatt " + shouldOpen);[m
+[31m-			print("wyatt " + openPosition.position);[m
+[31m-			print("wyatt " + closedPosition.position);[m
+[31m-[m
+ 			if (shouldOpen) {[m
+ 				OpenGate();[m
+ 			} else {[m
+[1mdiff --git a/GMTK/Assets/Switch.cs b/GMTK/Assets/Switch.cs[m
+[1mindex 4f9b385..fd96f9c 100644[m
+[1m--- a/GMTK/Assets/Switch.cs[m
+[1m+++ b/GMTK/Assets/Switch.cs[m
+[36m@@ -7,13 +7,6 @@[m [mpublic class Switch : MonoBehaviour[m
+     public GameObject SwitchBody;[m
+     public bool On;[m
+ [m
+[31m-    // Start is called before the first frame update[m
+[31m-    void Start()[m
+[31m-    {[m
+[31m-        [m
+[31m-    }[m
+[31m-[m
+[31m-    // Update is called once per frame[m
+     void Update()[m
+     {[m
+         if (SwitchBody.transform.localRotation.normalized.x < -0.45f)[m
