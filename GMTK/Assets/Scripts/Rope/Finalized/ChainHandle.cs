@@ -9,10 +9,14 @@ public class ChainHandle : MonoBehaviour
     [SerializeField]
     Transform firstChain;
     float distance;
+
+    [Range(-10.0f, 10.0f)]
+    public float distanceOffset = 1.0f;
+
     // Start is called before the first frame update
     void Start()
     {
-        distance = Vector3.Distance(transform.position, firstChain.position);
+        distance = Vector3.Distance(transform.position, firstChain.position * distanceOffset);
     }
     void OnDrawGizmos()
     {
