@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: 60a6b11ffe5197d4b82579422c0caf36
+guid: 2784a01a0e2890146a49ab29a892de12
 ModelImporter:
   serializedVersion: 21100
   internalIDToNameTable:
   - first:
-      74: 1827226128182048838
-    second: Take 001
+      74: -920487208342018762
+    second: BigGuy_FlopIdle
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -91,7 +91,7 @@ ModelImporter:
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
   referencedClips: []
-  importAnimation: 0
+  importAnimation: 1
   humanDescription:
     serializedVersion: 3
     human: []
