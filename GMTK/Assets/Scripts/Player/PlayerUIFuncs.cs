@@ -8,7 +8,7 @@ public class PlayerUIFuncs : MonoBehaviour {
         if (gameObject.name == "SmallPlayer") return;
 
         if (value.started) {
-            inGameUI.SetActive(true);
+            //inGameUI.SetActive(true);
             inGameUI.GetComponent<InGameUI>().PauseGame();
 		}
     } 
