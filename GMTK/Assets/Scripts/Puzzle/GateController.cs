@@ -1,8 +1,8 @@
 using UnityEngine;
 
 public class GateController : MonoBehaviour {
-	[SerializeField] Transform openPosition;
-	[SerializeField] Transform closedPosition;
+	[SerializeField] float maxHeight;
+	[SerializeField] float minHeight;
 
 	[System.Serializable] struct SwitchStruct { public GameObject lever; public bool shouldBeOn; }
 	[SerializeField] SwitchStruct[] switches;
@@ -10,7 +10,14 @@ public class GateController : MonoBehaviour {
 	float checkInterval = 1f;
 	float checkTimer = 0f;
 
-	bool isOpen = false;
+	public enum GateState { INACTIVE, OPENING, CLOSING };
+	public GateState state = GateState.INACTIVE;
+
+	float lerpTimer = 0f;
+
+	void Awake() {
+		transform.position = new Vector3(transform.position.x, minHeight, transform.position.z);
+	}
 
 	void Update() {
 		checkTimer += Time.deltaTime;
@@ -27,24 +34,31 @@ public class GateController : MonoBehaviour {
 			}
 
 			if (shouldOpen) {
-				OpenGate();
+				if (transform.position.y != maxHeight) state = GateState.OPENING;
 			} else {
-				CloseGate();
+				if (transform.position.y != minHeight) state = GateState.CLOSING;
 			}
 		}
-	}
 
-	void OpenGate() {
-		if (isOpen) return;
-		isOpen = true;
+		if (state == GateState.OPENING) {
+			transform.position = new Vector3(transform.position.x, Mathf.Lerp(minHeight, maxHeight, lerpTimer), transform.position.z);
 
-		transform.position = openPosition.position;
-	}
+			if (Mathf.Abs(maxHeight - transform.position.y) < 0.01f) {
+				transform.position = new Vector3(transform.position.x, maxHeight, transform.position.z);
+				print(maxHeight);
 
-	void CloseGate() {
-		if (!isOpen) return;
-		isOpen = false;
+				state = GateState.INACTIVE;
+			} else { lerpTimer += 0.4f * Time.deltaTime; }
+		} else if (state == GateState.CLOSING) {
+			transform.position = new Vector3(transform.position.x, Mathf.Lerp(minHeight, maxHeight, lerpTimer), transform.position.z);
 
-		transform.position = closedPosition.position;
+			if (Mathf.Abs(minHeight - transform.position.y) < 0.01f) {
+				transform.position = new Vector3(transform.position.x, minHeight, transform.position.z);
+
+				state = GateState.INACTIVE;
+			} else { lerpTimer -= 0.4f * Time.deltaTime; }
+		}
+
+		Mathf.Clamp(lerpTimer, 0f, 1f);
 	}
 }
