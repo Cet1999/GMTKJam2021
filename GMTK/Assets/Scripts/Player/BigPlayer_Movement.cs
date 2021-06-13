@@ -14,6 +14,7 @@ public class BigPlayer_Movement : MonoBehaviour {
     private bool Flopped = false;
     public bool DestroyDetection = false;
     private GameObject ToBeDestroyed;
+    public GameObject PS;
 
     [SerializeField] float maxVelocityWhileGrounded = 5f;
     [SerializeField] float maxVelocityWhileFalling = 3f;
@@ -164,6 +165,11 @@ public class BigPlayer_Movement : MonoBehaviour {
                 }
             }
         }
+    }
+
+    public void EmitParticle()
+    {
+        PS.GetComponent<ParticleSystem>().Play();
     }
 
     public void DestroyObject()
