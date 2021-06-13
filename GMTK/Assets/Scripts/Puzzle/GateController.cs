@@ -16,7 +16,6 @@ public class GateController : MonoBehaviour {
 		checkTimer += Time.deltaTime;
 
 		if (checkTimer > checkInterval) {
-			print("wyatt inner update");
 			checkTimer = 0f;
 
 			bool shouldOpen = true;
@@ -26,10 +25,6 @@ public class GateController : MonoBehaviour {
 					shouldOpen = false;
 				}
 			}
-
-			print("wyatt " + shouldOpen);
-			print("wyatt " + openPosition.position);
-			print("wyatt " + closedPosition.position);
 
 			if (shouldOpen) {
 				OpenGate();

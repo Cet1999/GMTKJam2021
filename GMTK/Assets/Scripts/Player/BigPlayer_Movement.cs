@@ -29,6 +29,16 @@ public class BigPlayer_Movement : MonoBehaviour {
         float distToGround = GetComponent<CapsuleCollider>().bounds.extents.y;
         isGrounded = Physics.Raycast(rb.position, -Vector3.up, distToGround + 0.1f);
 
+        //RaycastHit hit;
+        //Ray ray = new Ray(transform.position, -Vector3.up);
+        //if (Physics.Raycast(ray, out hit, distToGround + 0.1f, Physics.AllLayers)) {
+        //    if (hit.collider != null) {
+        //        if (hit.collider.CompareTag("Elevator")) {
+        //            print("on elevator");
+        //        }
+        //    }
+        //}
+
         // calculate force applied by input
         Vector3 moveDir = rawInputMovement.normalized;
 
