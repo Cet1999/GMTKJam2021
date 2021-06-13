@@ -8,6 +8,7 @@ TagManager:
   - Collectible
   - Destructable
   - Particle
+  - Resp
   layers:
   - Default
   - TransparentFX
