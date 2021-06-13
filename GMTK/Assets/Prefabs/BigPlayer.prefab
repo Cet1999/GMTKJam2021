@@ -4979,6 +4979,7 @@ GameObject:
   - component: {fileID: 7876884991763499684}
   - component: {fileID: 5743770543484149287}
   - component: {fileID: 4658514766050719033}
+  - component: {fileID: 7578309416313679248}
   m_Layer: 7
   m_Name: BigPlayer
   m_TagString: Player
@@ -5123,13 +5124,41 @@ MonoBehaviour:
     m_ActionId: a868cdb1-3666-4160-8baa-50a77834d5ff
     m_ActionName: ArrowKeys/Jump[/Keyboard/space]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7578309416313679248}
+        m_TargetAssemblyTypeName: PlayerUIFuncs, Assembly-CSharp
+        m_MethodName: onMenu
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: ed2d011e-ee63-443c-af27-e69e10766e56
     m_ActionName: WASD/Menu[/Keyboard/escape]
   - m_PersistentCalls:
       m_Calls: []
-    m_ActionId: aea207e4-f672-45a2-b0a0-08a1e07c3b0b
+    m_ActionId: bbd57000-3d28-406e-a634-44fc6df7c2e9
     m_ActionName: ArrowKeys/Menu[/Keyboard/escape]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7578309416313679248}
+        m_TargetAssemblyTypeName: PlayerUIFuncs, Assembly-CSharp
+        m_MethodName: onExitMenu
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: be767225-fba4-41a9-85a5-960ca08f0f62
+    m_ActionName: InMenu/Menu[/Keyboard/escape]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: WASD
@@ -5163,6 +5192,19 @@ MonoBehaviour:
   elevatorMask:
     serializedVersion: 2
     m_Bits: 256
+--- !u!114 &7578309416313679248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7876884991763499690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16756e9329cefb441885d444b33a18ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inGameUI: {fileID: 0}
 --- !u!1 &7876884993349177613
 GameObject:
   m_ObjectHideFlags: 0

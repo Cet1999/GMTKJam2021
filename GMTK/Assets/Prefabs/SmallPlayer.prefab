@@ -140,10 +140,11 @@ GameObject:
   - component: {fileID: 1088787464256248199}
   - component: {fileID: 1088787464256248196}
   - component: {fileID: 1088787464256248197}
-  - component: {fileID: 1088787464256248194}
   - component: {fileID: 930773797}
   - component: {fileID: 1198534884}
   - component: {fileID: 6680742370987212373}
+  - component: {fileID: 1497775280972303978}
+  - component: {fileID: 8238852234569288063}
   m_Layer: 7
   m_Name: SmallPlayer
   m_TagString: Player
@@ -268,84 +269,6 @@ MonoBehaviour:
   jumpForce: 4000
   collectibleLocations:
   - {fileID: 3390227924822190548}
---- !u!114 &1088787464256248194
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1088787464256248195}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: 6858b84756e13f542996282f038065d7, type: 3}
-  m_NotificationBehavior: 2
-  m_UIInputModule: {fileID: 0}
-  m_DeviceLostEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_DeviceRegainedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ControlsChangedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ActionEvents:
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 5838f0c4-f952-4a35-accc-92f38edfe373
-    m_ActionName: WASD/Movement[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 496f806b-7ca5-4260-aef7-d386202f380c
-    m_ActionName: WASD/Jump[/Keyboard/c]
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1088787464256248197}
-        m_TargetAssemblyTypeName: BigPlayer_Movement, Assembly-CSharp
-        m_MethodName: onMovement
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: 1eb52980-a1df-4d37-8e57-66388e1e249b
-    m_ActionName: WASD1/Movement[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1088787464256248197}
-        m_TargetAssemblyTypeName: BigPlayer_Movement, Assembly-CSharp
-        m_MethodName: onJump
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: a868cdb1-3666-4160-8baa-50a77834d5ff
-    m_ActionName: WASD1/Jump[/Keyboard/space]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: ed2d011e-ee63-443c-af27-e69e10766e56
-    m_ActionName: WASD/Menu[/Keyboard/escape]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: aea207e4-f672-45a2-b0a0-08a1e07c3b0b
-    m_ActionName: ArrowKeys/Menu[/Keyboard/escape]
-  m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
-  m_DefaultActionMap: ArrowKeys
-  m_SplitScreenIndex: -1
-  m_Camera: {fileID: 0}
 --- !u!114 &930773797
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -393,6 +316,125 @@ MonoBehaviour:
   elevatorMask:
     serializedVersion: 2
     m_Bits: 2147483647
+--- !u!114 &1497775280972303978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1088787464256248195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16756e9329cefb441885d444b33a18ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inGameUI: {fileID: 0}
+--- !u!114 &8238852234569288063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1088787464256248195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 6858b84756e13f542996282f038065d7, type: 3}
+  m_NotificationBehavior: 2
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 5838f0c4-f952-4a35-accc-92f38edfe373
+    m_ActionName: WASD/Movement[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 496f806b-7ca5-4260-aef7-d386202f380c
+    m_ActionName: WASD/Jump[/Mouse/leftButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: ed2d011e-ee63-443c-af27-e69e10766e56
+    m_ActionName: WASD/Menu[/Keyboard/escape]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1088787464256248197}
+        m_TargetAssemblyTypeName: BigPlayer_Movement, Assembly-CSharp
+        m_MethodName: onMovement
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 1eb52980-a1df-4d37-8e57-66388e1e249b
+    m_ActionName: ArrowKeys/Movement[/Keyboard/upArrow,/Keyboard/downArrow,/Keyboard/leftArrow,/Keyboard/rightArrow]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1088787464256248197}
+        m_TargetAssemblyTypeName: BigPlayer_Movement, Assembly-CSharp
+        m_MethodName: onJump
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: a868cdb1-3666-4160-8baa-50a77834d5ff
+    m_ActionName: ArrowKeys/Jump[/Mouse/rightButton]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1497775280972303978}
+        m_TargetAssemblyTypeName: PlayerUIFuncs, Assembly-CSharp
+        m_MethodName: onMenu
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: bbd57000-3d28-406e-a634-44fc6df7c2e9
+    m_ActionName: ArrowKeys/Menu[/Keyboard/escape]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1497775280972303978}
+        m_TargetAssemblyTypeName: PlayerUIFuncs, Assembly-CSharp
+        m_MethodName: onExitMenu
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: be767225-fba4-41a9-85a5-960ca08f0f62
+    m_ActionName: InMenu/Menu[/Keyboard/escape]
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: ArrowKeys
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!1 &1368875205097554127
 GameObject:
   m_ObjectHideFlags: 0

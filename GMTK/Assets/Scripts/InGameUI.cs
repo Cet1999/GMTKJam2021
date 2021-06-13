@@ -6,13 +6,15 @@ public class InGameUI : MonoBehaviour {
 	[SerializeField] PlayerInput smallPlayerInput;
 
 	public void ResumeGame() {
-		//bigPlayerInput.SwitchCurrentActionMap("Menu");
-		//smallPlayerInput.SwitchCurrentActionMap("Menu");
+		bigPlayerInput.SwitchCurrentActionMap("WASD");
+		smallPlayerInput.SwitchCurrentActionMap("ArrowKeys");
+
+		gameObject.SetActive(false);
 	}
 
 	public void PauseGame() { 
-		//bigPlayerInput.SwitchCurrentActionMap("InMenu");
-		//smallPlayerInput.SwitchCurrentActionMap("InMenu");
+		bigPlayerInput.SwitchCurrentActionMap("InMenu");
+		smallPlayerInput.SwitchCurrentActionMap("InMenu");
 	}
 
 	public void ExitGame() => Application.Quit();

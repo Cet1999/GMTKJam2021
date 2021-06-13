@@ -133,7 +133,7 @@
                 {
                     "name": "Menu",
                     "type": "Button",
-                    "id": "aea207e4-f672-45a2-b0a0-08a1e07c3b0b",
+                    "id": "bbd57000-3d28-406e-a634-44fc6df7c2e9",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
@@ -208,7 +208,34 @@
                 },
                 {
                     "name": "",
-                    "id": "066e7a95-2f28-436d-b79d-ea513295bd14",
+                    "id": "8ccb29c0-88f7-4b6e-ac7d-b8ecd0ef0781",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Menu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "InMenu",
+            "id": "b0b0ed4f-560f-43a5-bf7a-8fe9887d8375",
+            "actions": [
+                {
+                    "name": "Menu",
+                    "type": "Button",
+                    "id": "be767225-fba4-41a9-85a5-960ca08f0f62",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "220ee42b-4234-47dd-b050-f0f29950cae7",
                     "path": "<Keyboard>/escape",
                     "interactions": "",
                     "processors": "",
