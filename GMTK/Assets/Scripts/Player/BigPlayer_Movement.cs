@@ -30,7 +30,6 @@ public class BigPlayer_Movement : MonoBehaviour {
         // set isGrounded
         float distToGround = GetComponent<CapsuleCollider>().bounds.extents.y;
         isGrounded = Physics.Raycast(rb.position, -Vector3.up, distToGround + 0.1f);
-
         //RaycastHit hit;
         //Ray ray = new Ray(transform.position, -Vector3.up);
         //if (Physics.Raycast(ray, out hit, distToGround + 0.1f, Physics.AllLayers)) {
@@ -47,6 +46,7 @@ public class BigPlayer_Movement : MonoBehaviour {
         if (Flopped)
         {
             moveDir = new Vector3(0, 0, 0);
+            anim.SetBool("Bounce", false);
         }
 
         //rotate player
@@ -55,7 +55,6 @@ public class BigPlayer_Movement : MonoBehaviour {
         {
             Quaternion toRotation = Quaternion.LookRotation(moveDir);
             transform.rotation = Quaternion.Lerp(transform.rotation, toRotation, 0.1f);
-
             anim.SetBool("IsWalking", true);
         } else
         {
@@ -97,10 +96,20 @@ public class BigPlayer_Movement : MonoBehaviour {
 	    rb.velocity = vel;
 
         // attempt to jump
-        if (jumpPressed && isGrounded) {
+        if (jumpPressed && (isGrounded || Flopped)) {
             if (BigPlayer)
             {
                 Flopped = !Flopped;
+                if (Flopped)
+                {
+                    GetComponent<CapsuleCollider>().enabled = false;
+                    GetComponent<BoxCollider>().enabled = true;
+                }
+                else
+                {
+                    GetComponent<CapsuleCollider>().enabled = true;
+                    GetComponent<BoxCollider>().enabled = false;
+                }
                 anim.SetBool("Flop", Flopped);
             } else
             {
@@ -118,6 +127,15 @@ public class BigPlayer_Movement : MonoBehaviour {
     public void onJump(InputAction.CallbackContext value) {
         if (value.started) jumpPressed = true;
         if (value.canceled) jumpPressed = false;
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (Flopped && collision.gameObject.tag == "Player")
+        {
+            collision.rigidbody.AddForce(Vector3.up * 5000f);
+            anim.SetBool("Bounce", true);
+        }
     }
 
     void OnTriggerEnter(Collider other) {
