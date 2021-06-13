@@ -172,6 +172,7 @@ GameObject:
   - component: {fileID: 7876884991763499685}
   - component: {fileID: 7876884991763499684}
   - component: {fileID: 5743770543484149287}
+  - component: {fileID: 4658514766050719033}
   m_Layer: 7
   m_Name: BigPlayer
   m_TagString: Player
@@ -312,6 +313,14 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: a868cdb1-3666-4160-8baa-50a77834d5ff
     m_ActionName: ArrowKeys/Jump[/Keyboard/space]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: ed2d011e-ee63-443c-af27-e69e10766e56
+    m_ActionName: WASD/Menu[/Keyboard/escape]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: aea207e4-f672-45a2-b0a0-08a1e07c3b0b
+    m_ActionName: ArrowKeys/Menu[/Keyboard/escape]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: WASD
@@ -330,6 +339,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 2.03}
   m_Center: {x: 0, y: -0.4, z: 0}
+--- !u!114 &4658514766050719033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7876884991763499690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66c0384112e211649898347df9e1d5e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  elevatorMask:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!1 &7876884993349177613
 GameObject:
   m_ObjectHideFlags: 0
