@@ -4,6 +4,10 @@ public class GateController : MonoBehaviour {
 	[SerializeField] float maxHeight;
 	[SerializeField] float minHeight;
 
+	[SerializeField] Transform pivotPoint;
+	[SerializeField] Vector3 maxRot;
+	[SerializeField] Vector3 minRot;
+
 	[System.Serializable] struct SwitchStruct { public GameObject lever; public bool shouldBeOn; }
 	[SerializeField] SwitchStruct[] switches;
 
@@ -17,6 +21,7 @@ public class GateController : MonoBehaviour {
 
 	void Awake() {
 		transform.position = new Vector3(transform.position.x, minHeight, transform.position.z);
+		pivotPoint.eulerAngles = minRot;
 	}
 
 	void Update() {
@@ -34,25 +39,33 @@ public class GateController : MonoBehaviour {
 			}
 
 			if (shouldOpen) {
-				if (transform.position.y != maxHeight) state = GateState.OPENING;
+				if (transform.position.y != maxHeight || transform.rotation != Quaternion.Euler(maxRot)) state = GateState.OPENING;
 			} else {
-				if (transform.position.y != minHeight) state = GateState.CLOSING;
+				if (transform.position.y != minHeight || transform.rotation != Quaternion.Euler(minRot)) state = GateState.CLOSING;
 			}
 		}
 
 		if (state == GateState.OPENING) {
 			transform.position = new Vector3(transform.position.x, Mathf.Lerp(minHeight, maxHeight, lerpTimer), transform.position.z);
 
-			if (Mathf.Abs(maxHeight - transform.position.y) < 0.01f) {
+			Vector3 rot = Vector3.Lerp(minRot, maxRot, lerpTimer);
+			transform.rotation = Quaternion.Euler(rot);
+
+			if (Mathf.Abs(maxHeight - transform.position.y) < 0.01f && maxHeight != minHeight) {
 				transform.position = new Vector3(transform.position.x, maxHeight, transform.position.z);
+				transform.rotation = Quaternion.Euler(maxRot);
 
 				state = GateState.INACTIVE;
 			} else { lerpTimer += 0.4f * Time.deltaTime; }
 		} else if (state == GateState.CLOSING) {
 			transform.position = new Vector3(transform.position.x, Mathf.Lerp(minHeight, maxHeight, lerpTimer), transform.position.z);
 
-			if (Mathf.Abs(minHeight - transform.position.y) < 0.01f) {
+			Vector3 rot = Vector3.Lerp(minRot, maxRot, lerpTimer);
+			transform.rotation = Quaternion.Euler(rot);
+
+			if (Mathf.Abs(minHeight - transform.position.y) < 0.01f && maxHeight != minHeight) {
 				transform.position = new Vector3(transform.position.x, minHeight, transform.position.z);
+				transform.rotation = Quaternion.Euler(minRot);
 
 				state = GateState.INACTIVE;
 			} else { lerpTimer -= 0.4f * Time.deltaTime; }
