@@ -45,7 +45,6 @@ public class GateController : MonoBehaviour {
 
 			if (Mathf.Abs(maxHeight - transform.position.y) < 0.01f) {
 				transform.position = new Vector3(transform.position.x, maxHeight, transform.position.z);
-				print(maxHeight);
 
 				state = GateState.INACTIVE;
 			} else { lerpTimer += 0.4f * Time.deltaTime; }
