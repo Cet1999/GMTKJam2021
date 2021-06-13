@@ -1,18 +1,16 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class Collectible : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+public class Collectible : MonoBehaviour {
+    bool collected = false;
+
+    void Update() {
+        if (!collected) {
+            transform.Rotate(new Vector3(15, 30, 45) * Time.deltaTime);
+        }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        transform.Rotate(new Vector3(15, 30, 45) * Time.deltaTime);
-    }
+    public void Collect() => collected = true;
+    public void Drop() => collected = false;
+
+    public bool IsCollected() => collected;
 }

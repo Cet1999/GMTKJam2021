@@ -18,6 +18,8 @@ public class BigPlayer_Movement : MonoBehaviour {
     [SerializeField] float moveForce = 10000f;
     [SerializeField] float jumpForce = 50000f;
 
+    [SerializeField] Transform[] collectibleLocations;
+
     private void Start() {
         rb = GetComponent<Rigidbody>();
     }
@@ -116,5 +118,20 @@ public class BigPlayer_Movement : MonoBehaviour {
     public void onJump(InputAction.CallbackContext value) {
         if (value.started) jumpPressed = true;
         if (value.canceled) jumpPressed = false;
+    }
+
+    void OnTriggerEnter(Collider other) {
+        if (other.CompareTag("Collectible")) {
+            if (other.GetComponent<Collectible>().IsCollected()) return;
+
+            for (int i = 0; i < collectibleLocations.Length; i++) {
+                if (collectibleLocations[i].transform.childCount == 0) {
+                    other.transform.parent = collectibleLocations[i].transform;
+                    other.transform.localPosition = Vector3.zero;
+                    other.GetComponent<Collectible>().Collect();
+                    break;
+                }
+            }
+        }
     }
 }
