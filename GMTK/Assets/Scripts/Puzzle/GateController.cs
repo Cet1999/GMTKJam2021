@@ -11,7 +11,7 @@ public class GateController : MonoBehaviour {
 	[System.Serializable] struct SwitchStruct { public GameObject lever; public bool shouldBeOn; }
 	[SerializeField] SwitchStruct[] switches;
 
-	float checkInterval = 1f;
+	float checkInterval = 0.25f;
 	float checkTimer = 0f;
 
 	public enum GateState { INACTIVE, OPENING, CLOSING };
