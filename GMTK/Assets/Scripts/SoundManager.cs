@@ -4,7 +4,7 @@ public class SoundManager : MonoBehaviour {
 	[SerializeField] AudioSource[] CollectibleSounds;
 	int collectibleSoundsUnlocked = 0;
 
-	public float volume = 1f;
+	public float volume = 0.225f;
 
 	void Awake() {
 		for (int i=0; i<CollectibleSounds.Length; i++) {

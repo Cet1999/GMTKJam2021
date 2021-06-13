@@ -6,7 +6,7 @@ public class Collectible : MonoBehaviour {
     GameObject soundManager;
 
     private void Awake() {
-        soundManager = GameObject.Find("Managers");
+        soundManager = GameObject.Find("GameManager");
     }
 
     void Update() {
