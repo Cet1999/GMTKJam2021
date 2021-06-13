@@ -9,7 +9,7 @@ public class InGameUI : MonoBehaviour {
 		bigPlayerInput.SwitchCurrentActionMap("WASD");
 		smallPlayerInput.SwitchCurrentActionMap("ArrowKeys");
 
-		Time.timeScale = 1f;
+		//Time.timeScale = 1f;
 
 		gameObject.SetActive(false);
 	}
@@ -18,7 +18,7 @@ public class InGameUI : MonoBehaviour {
 		bigPlayerInput.SwitchCurrentActionMap("InMenu");
 		smallPlayerInput.SwitchCurrentActionMap("InMenu");
 
-		Time.timeScale = 0f;
+		//Time.timeScale = 0f;
 	}
 
 	public void ExitGame() => Application.Quit();
