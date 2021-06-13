@@ -12,6 +12,8 @@ public class BigPlayer_Movement : MonoBehaviour {
     public bool BigPlayer;
     public Animator anim;
     private bool Flopped = false;
+    public bool DestroyDetection = false;
+    private GameObject ToBeDestroyed;
 
     [SerializeField] float maxVelocityWhileGrounded = 5f;
     [SerializeField] float maxVelocityWhileFalling = 3f;
@@ -47,6 +49,7 @@ public class BigPlayer_Movement : MonoBehaviour {
         {
             moveDir = new Vector3(0, 0, 0);
             anim.SetBool("Bounce", false);
+            
         }
 
         //rotate player
@@ -135,6 +138,16 @@ public class BigPlayer_Movement : MonoBehaviour {
         {
             collision.rigidbody.AddForce(Vector3.up * 5000f);
             anim.SetBool("Bounce", true);
+        } else if (Flopped && collision.gameObject.tag == "Destructable")
+        {
+            if (DestroyDetection)
+            {
+                collision.gameObject.GetComponent<Destructable>().Destruction();
+            }
+            else
+            {
+                ToBeDestroyed = collision.gameObject;
+            }
         }
     }
 
@@ -150,6 +163,14 @@ public class BigPlayer_Movement : MonoBehaviour {
                     break;
                 }
             }
+        }
+    }
+
+    public void DestroyObject()
+    {
+        if (ToBeDestroyed)
+        {
+            ToBeDestroyed.GetComponent<Destructable>().Destruction();
         }
     }
 }

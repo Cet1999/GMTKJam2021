@@ -9,6 +9,12 @@ public class AnimationVFX : StateMachineBehaviour
         if(stateInfo.IsName("BigGuy_Flop"))
         {
             Camera.main.GetComponent<Camera_Movement>().ShakeCamera();
+            animator.gameObject.transform.parent.GetComponent<BigPlayer_Movement>().DestroyDetection = true;
+            animator.gameObject.transform.parent.GetComponent<BigPlayer_Movement>().DestroyObject();
+        } else if (stateInfo.IsName("BigGuy_FlopBack"))
+        {
+            animator.gameObject.transform.parent.GetComponent<BigPlayer_Movement>().DestroyDetection = false;
+            
         }
     }
 }

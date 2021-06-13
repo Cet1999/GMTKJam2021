@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Elevator
   - Collectible
+  - Destructable
+  - Particle
   layers:
   - Default
   - TransparentFX
