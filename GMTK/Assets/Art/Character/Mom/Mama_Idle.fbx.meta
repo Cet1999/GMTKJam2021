@@ -1,39 +1,32 @@
 fileFormatVersion: 2
-guid: 7afb22bc154fb59439ab16b434f7c03c
+guid: f231e431e5cc7bf41ade05cb19e2de8e
 ModelImporter:
   serializedVersion: 21100
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      74: -6651101182796594176
+    second: Mama_Idle
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Chimney
-    second: {fileID: 2100000, guid: 6aa6202f47a4a05429772c288566c2b2, type: 2}
+      name: BigBody
+    second: {fileID: 2100000, guid: 6ea6e9b4a3b323b49a505f3bf9fdc50f, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Door
-    second: {fileID: 2100000, guid: 5f9b33e26e0b2bd4eaa781d2b71ed3c4, type: 2}
+      name: Claws
+    second: {fileID: 2100000, guid: babbdb2d7e7af6b4893efe7559be1bca, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: DoorKnob
-    second: {fileID: 2100000, guid: 142fb8886a5249440a527fe1bbb16fe8, type: 2}
+      name: Eyes
+    second: {fileID: 2100000, guid: 7be1ddcaabcdb3d42a8b42153d63f796, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: House
-    second: {fileID: 2100000, guid: 127c9ebf85723ae4ea1384ed73973e25, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Window
-    second: {fileID: 2100000, guid: fcb0b7cf115af6a44b5e1586c4a4c598, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: lambert1
-    second: {fileID: 2100000, guid: 0edc23a7831e9cb4e96a314bfbb90d17, type: 2}
+      name: MamaHair
+    second: {fileID: 2100000, guid: 51c889dcca17cd74f9544e6d1c846fd5, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -60,11 +53,40 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Mama_Idle
+      takeName: Mama_Idle
+      internalID: 0
+      firstFrame: 230
+      lastFrame: 269
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 230
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 35
+    globalScale: 30
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -115,7 +137,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.35
+    globalScale: 30
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
