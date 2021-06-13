@@ -1,32 +1,19 @@
 fileFormatVersion: 2
-guid: f231e431e5cc7bf41ade05cb19e2de8e
+guid: 96672330a10893b4b9ea55b10721e622
 ModelImporter:
   serializedVersion: 21100
-  internalIDToNameTable:
-  - first:
-      74: -6651101182796594176
-    second: Mama_Idle
+  internalIDToNameTable: []
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: BigBody
-    second: {fileID: 2100000, guid: 6ea6e9b4a3b323b49a505f3bf9fdc50f, type: 2}
+      name: lambert1
+    second: {fileID: 2100000, guid: 77225ab0951f1944f9637ea6e5fc086a, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Claws
-    second: {fileID: 2100000, guid: babbdb2d7e7af6b4893efe7559be1bca, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Eyes
-    second: {fileID: 2100000, guid: 7be1ddcaabcdb3d42a8b42153d63f796, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: MamaHair
-    second: {fileID: 2100000, guid: 51c889dcca17cd74f9544e6d1c846fd5, type: 2}
+      name: lambert9
+    second: {fileID: 2100000, guid: 76ee93c0bce23894fb7ea64b97b426b2, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -53,40 +40,11 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations:
-    - serializedVersion: 16
-      name: Mama_Idle
-      takeName: Mama_Idle
-      internalID: 0
-      firstFrame: 230
-      lastFrame: 269
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 230
+    clipAnimations: []
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 45
+    globalScale: 10
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -137,7 +95,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.45
+    globalScale: 10
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
