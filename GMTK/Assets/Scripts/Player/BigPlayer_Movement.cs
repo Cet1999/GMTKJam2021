@@ -73,18 +73,25 @@ public class BigPlayer_Movement : MonoBehaviour {
         Vector3 vel = rb.velocity;
 	    vel.y = 0;
 
+
         if (isGrounded)
         {
+            vel = Vector3.ClampMagnitude(vel, maxVelocityWhileGrounded);
             if (!BigPlayer)
             {
                 anim.SetBool("IsJumping", false);
             }
-            vel = Vector3.ClampMagnitude(vel, maxVelocityWhileGrounded);
-        } else {
-	        vel = Vector3.ClampMagnitude(vel, maxVelocityWhileFalling);
+        }
+        else
+        {
+            vel = Vector3.ClampMagnitude(vel, maxVelocityWhileFalling);
+            if (!BigPlayer)
+            {
+                anim.SetBool("IsJumping", true);
+            }
         }
 
-	    vel.y = rb.velocity.y;
+        vel.y = rb.velocity.y;
 	    rb.velocity = vel;
 
         // attempt to jump
@@ -95,7 +102,6 @@ public class BigPlayer_Movement : MonoBehaviour {
                 anim.SetBool("Flop", Flopped);
             } else
             {
-                anim.SetBool("IsJumping", true);
                 rb.AddForce(Vector3.up * jumpForce);
             }
             jumpPressed = false;
